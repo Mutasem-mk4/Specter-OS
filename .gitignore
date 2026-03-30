@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+.env.local
+
+# Databases and Reports (Ignore generated files over time)
+*.db
+*.sqlite3
+reports/
+!reports/.gitkeep
+
+# Testing / Logs
+*.log
+logs/
+
+# Mac/OSX
+.DS_Store

@@ -1,0 +1,26 @@
+services:
+  specter-api:
+    build: .
+    container_name: specter_api
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - SPECTER_LLM_MODEL=${SPECTER_LLM_MODEL:-gemini-2.0-flash}
+      - DATABASE_URL=sqlite+aiosqlite:///./specter.db
+      - REPORTS_DIR=/app/reports
+      - HOST=0.0.0.0
+      - PORT=8000
+    volumes:
+      - specter_data:/app/specter.db
+      - specter_reports:/app/reports
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  specter_data:
+  specter_reports:
