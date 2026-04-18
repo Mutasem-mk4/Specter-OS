@@ -1,4 +1,4 @@
-# ⚡ Specter-OS
+⚡ Specter-OS
 
 > **Autonomous AI Agent Red Teaming Engine**
 >
@@ -79,18 +79,20 @@ http://localhost:8000/dashboard
 
 ## 💻 CLI Usage
 
+The easiest way to use Specter-OS on Windows is through the `specter.bat` shortcut:
+
 ```bash
 # Start the server
-specter serve
+.\specter serve
 
 # Launch a campaign directly from CLI
-specter attack https://your-agent.example.com/chat --name "Q2 Audit"
+.\specter attack http://localhost:8001/chat --name "Q2 Audit"
 
 # Generate PDF report for a campaign
-specter report <campaign-id>
+.\specter report <campaign-id>
 
 # Check campaign status
-specter status <campaign-id>
+.\specter status <campaign-id>
 ```
 
 ---
@@ -199,3 +201,11 @@ Unauthorized use is illegal and unethical.
 ## 📄 License
 
 Proprietary — Specter Security © 2026. All rights reserved.
+
+---
+
+## About the Author
+
+**Developed by [Mutasem Kharma](https://github.com/Mutasem-mk4)**, a Security Engineer and Open-Source Toolsmith specializing in eBPF, AI-powered security frameworks, and autonomous vulnerability hunting. 
+
+Explore more projects and technical deep-dives at **[mutasem-portfolio.vercel.app](https://mutasem-portfolio.vercel.app/)**.
