@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 What Is Specter-OS?
+## 🎯 What Is Specter-OS-
 
 Companies are deploying **AI Agents** with real permissions — sending emails, querying databases, executing code. Specter-OS **automatically attacks these agents** before real adversaries do.
 
